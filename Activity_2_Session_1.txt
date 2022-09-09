@@ -1,0 +1,16 @@
+What does the model achieve?
+  The model compares the average age of each NBA team in the 2021-2022 regular season to each team's regular season wins.
+How should metrics be interpreted?
+  A slope of 2.242 indicates that as a team's age increases by 1 year, their wins may be expected to increase by 2.242 wins on average.
+What are appropriate use cases?
+  Due to the extremely poor fit, statistically this model should never be used. However, this model may be used to illustrate the effect of experience on a winning team.
+  Most would expect that a winning team would have some sort of combination of experience (from age) and physical ability (which many would consider to begin significantly decreasing at around the age of 30 for an NBA player).
+How is it implemented? *
+  This model was implemented through the GraphPad application, utilizing linear regression.
+What are caveats/biases/concerns to its usage?
+  The model does not take into account the minutes played or games played by each player.
+  A linear regression model for this data is also problematic due to the extreme cases. E.G. a team with an average age of 35 would not be expected to win many games, because players at this age would be expected to be slowing down physically. However, this model expects otherwise, as shown by the positive slope.
+  On the other hand, a team with an average age of 20 would also not be expected to do well because they would not have the requisite experience most would expect out of a winning team.
+How to interpret this specific result and advising action/next steps
+  While the regression may show that older teams may win more games in the regular season, the data is very scattered and a linear regression does not fit this data at all. 
+  The next step would be to create a minutes-played-averaged value for each team, to account for each player's playing time, and perhaps use a more complex modelling style.
